@@ -5,6 +5,7 @@
 void print_alphabet(void)
 {
 	char alph = 'a';
+
 	while (alph != 'z' + 1)
 	{
 		_putchar(alph);
