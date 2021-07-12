@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int mul = 1;
+	int i;
+	int x;
 
 	if (argc != 3)
 	{
@@ -18,11 +20,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	int i;
 
 	for (i = 1; i < argc; i++)
 	{
-		int x = strtol(argv[i], NULL, 10);
+		x = strtol(argv[i], NULL, 10);
 
 		mul = mul * x;
 	}
