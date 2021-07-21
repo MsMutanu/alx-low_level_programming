@@ -3,7 +3,8 @@
 #include <ctype.h>
 #include "3-calc.h"
 
-/**main -performs basic operations
+/**
+ * main -performs basic operations
  * @argc: the number of arguments passed
  * @argv: an array of pointers to the the string of arguments passed
  *
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	func_ptr = get_op_func(argv[2]);
-		
+
 	if (func_ptr == NULL)
 	{
 		printf("Error\n");
