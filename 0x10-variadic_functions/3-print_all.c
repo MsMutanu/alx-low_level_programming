@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%d%c", sep, va_arg(strings, int));
+				printf("%s%f", sep, va_arg(strings, int));
 				break;
 			case 'i':
 				printf("%s%d", sep, va_arg(strings, int));
