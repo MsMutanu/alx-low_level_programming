@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		i++;
 		len++;
 	}
-	len = len + 1      /*+1 is the terminating character*/
+	len = len + 1;      /*+1 is the terminating character*/
 
 	p = malloc(sizeof(char) * len);
 
