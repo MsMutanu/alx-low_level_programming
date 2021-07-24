@@ -1,19 +1,20 @@
 #include "holberton.h"
 #include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * create_array - creates an array of char,
  * and initializes it with a specific char
  * @size: size of array
- * @c: a an array of chars
+ * @c: char to iniialize the array
  *
  * Return: a pointer to the array, or NULL if fails
  */
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	int i;
+	unsigned int i;
 
 	if (size == 0)
 		return (NULL);
